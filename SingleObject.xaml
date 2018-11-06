@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPF_Binding.SingleObject"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Binding"
+        mc:Ignorable="d"
+        Title="SingleObject" Height="300" Width="300">
+    <StackPanel>
+        <TextBlock Text="{Binding Name}" />
+        <TextBlock Text="{Binding Age}" />
+        <Button x:Name="clickEvent_btn" Content="CLICK ME!!!" Click="clickEvent_btn_Click"/>
+        <Button Content="Close" Click="Button_Click"/>
+    </StackPanel>
+</Window>
